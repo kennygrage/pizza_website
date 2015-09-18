@@ -11,10 +11,13 @@ describe('Pizza', function() {
 
   it('myPizza.size returns "Medium"', function() {
     var myPizza = new Pizza("Medium", 8.99);
-    var myPrice = myPizza.addDollarSign;
     expect(myPizza.size).to.equal("Medium");
   });
 
+  it('myPizza.price returns 8.99', function() {
+    var myPizza = new Pizza("Medium", 8.99);
+    expect(myPizza.price).to.equal(8.99);
+  });
 
 
 }); //end main describe()
