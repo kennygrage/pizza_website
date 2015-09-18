@@ -1,12 +1,14 @@
-describe('markSquareInArray', function() {
-  describe('New game: square can\'t be marked twice', function() {
-    it("Player 1 marks the middle square", function() {
-      expect(markSquareInArray(1, 1, 1)).to.eql([[9, 9, 9], [9, 1, 9], [9, 9, 9]]);
-    });
+describe('Pizza', function() {
+  it('myPizza.size returns "Small"', function() {
+    var myPizza = new Pizza("Small", 5.99);
+    expect(myPizza.size).to.equal("Small");
+  });
 
-    it("Player 2 tries to mark the middle square but it is taken", function() {
-      expect(markSquareInArray(1, 1, 2)).to.equal("Space already taken");
-    });
-  }); //end inner describe()
+  it('myPizza.price returns 5.99', function() {
+    var myPizza = new Pizza("Small", 5.99);
+    expect(myPizza.price).to.equal(5.99);
+  });
+
+
 
 }); //end main describe()
