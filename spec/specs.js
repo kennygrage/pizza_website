@@ -9,6 +9,12 @@ describe('Pizza', function() {
     expect(myPizza.price).to.equal(5.99);
   });
 
+  it('myPizza.size returns "Medium"', function() {
+    var myPizza = new Pizza("Medium", 8.99);
+    var myPrice = myPizza.addDollarSign;
+    expect(myPizza.size).to.equal("Medium");
+  });
+
 
 
 }); //end main describe()

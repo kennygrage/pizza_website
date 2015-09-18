@@ -10,9 +10,10 @@
 
 
 
-Pizza.prototype.price = function() {
-  return this.price;
-} //end Pizza.prototype.price
+// Pizza.prototype.addDollarSign = function() {
+//   this.price = "$" + this.price;
+//   return this.price;
+// } //end Pizza.prototype.addDollarSign
 
 
 
