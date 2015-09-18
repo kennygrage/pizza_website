@@ -1,0 +1,65 @@
+h1, #player_turn, #output, .choose_number_of_players, #new_game_button {
+  text-align: center;
+}
+
+h1, #player_turn {
+  padding: 25px 0px;
+}
+
+#_0_0, #_0_1, #_0_2  {
+  text-align: center; /*horizontial align*/
+  padding-top: 10px;   /*vertical align*/
+}
+
+#_1_0, #_1_1, #_1_2 {
+  text-align: center; /*horizontial align*/
+  padding-top: 5px;   /*vertical align*/
+}
+
+#_2_0, #_2_1, #_2_2 {
+  text-align: center; /*horizontial align*/
+  padding-top: 5px;   /*vertical align*/
+}
+
+#_0_1, #_2_1 {
+  border: solid grey;
+  border-width: 0 5px;
+}
+
+#_1_0, #_1_2 {
+  border: solid grey;
+  border-width: 5px 0px;
+}
+
+#_1_1 {
+  border: solid grey;
+  border-width: 5px;
+}
+
+
+#_0_0, #_0_1, #_0_2, #_2_0, #_2_1, #_2_2, #_1_0, #_1_1, #_1_2 {
+  font-size: 75px;
+  height: 125px;
+}
+
+#side1, #side2, #side3, #side4, #side5, #side6 {
+  height: 125px;
+}
+
+#player_one, #player_two {
+  background-clip:content-box; /*don't include padding in background color*/
+  height: 125px;
+  padding: 10px;
+}
+
+.container-non-responsive, #new_game_button {  /*hide board until user choses number of players*/
+  display: none;
+}
+
+.secondary_button_color {
+  background-color: lightgrey;
+}
+
+#two_players {
+  width: 100px;
+}
