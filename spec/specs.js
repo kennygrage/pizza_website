@@ -24,5 +24,10 @@ describe('Pizza', function() {
     expect(myPizza.size).to.equal("Large");
   });
 
+  it('myPizza.price returns 12.99', function() {
+    var myPizza = new Pizza("Large", 12.99);
+    expect(myPizza.price).to.equal(12.99);
+  });
+
 
 }); //end main describe()
