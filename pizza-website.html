@@ -13,42 +13,34 @@
       <h1>Kenny's Pizza</h1>
 
       <div class="row">
-        <div class="col-md-6">
-          <h2>Pizza Order:</h2>
-          <form id="order-pizza">
+        <div class="col-xs-12">
+          <h3>Pizza Order:</h3>
+          <form id="order_pizza">
             <div class="form-group">
-              <label>Size:
-                <input type="radio" class="form-control" name="size" id="large" value="Large">Large - $12.99<br>
-                <input type="radio" class="form-control" name="size" id="medium" value="Medium">Medium - $8.99<br>
-                <input type="radio" class="form-control" name="size" id="small" value="Small">Small - $5.99
-              </label>
-            </div>
-            <div class="form-group">
-              <label>Toppings (50 cents each):
-                <input type="checkbox" name="topping" id="pepperoni_topping" value="pepperoni_topping">Pepperoni<br>
-                <input type="checkbox" name="topping" id="extra_cheese_topping" value="extra_cheese_topping">Extra Cheese<br>
-                <input type="checkbox" name="topping" id="pineapple_topping" value="pineapple_topping">Pineapple<br>
-                <input type="checkbox" name="topping" id="sausage_topping" value="sausage_topping">Sausage<br>
-                <input type="checkbox" name="topping" id="canadian_bacon_topping" value="canadian_bacon_topping">Canadian Bacon
-              </label>
-            </div>
 
+                <label for="large"><input type="radio" class="form-control" name="size" id="large" value="Large" checked="checked">Large - $13</label><br>
+                <label for="medium"><input type="radio" class="form-control" name="size" id="medium" value="Medium">Medium - $9</label><br>
+                <label for="small"><input type="radio" class="form-control" name="size" id="small" value="Small">Small - $6</label>
+
+            </div>
+            <div class="form-group">
+              <label>Toppings (dollar each per pizza):<br>
+                <input type="checkbox" name="pepperoni_topping" id="pepperoni_topping" value="pepperoni_topping">Pepperoni<br>
+                <input type="checkbox" name="extra_cheese_topping" id="extra_cheese_topping" value="extra_cheese_topping">Extra Cheese<br>
+                <input type="checkbox" name="pineapple_topping" id="pineapple_topping" value="pineapple_topping">Pineapple<br>
+                <input type="checkbox" name="sausage_topping" id="sausage_topping" value="sausage_topping">Sausage<br>
+                <input type="checkbox" name="canadian_bacon_topping" id="canadian_bacon_topping" value="canadian_bacon_topping">Canadian Bacon
+              </label>
+            </div>
+            <div class="form-group">
+              How Many: <input type="number" value="1" class="how_many" id="how_many" name="how_many"><br>
+            </div>
             <div id="total-price">
-              <p>Your total price is: $<span id=total-price></span></p>
+              <p>Price per pizza: $<span id="this_pizza_price"></span></p>
             </div>
-
-            <span class="btn btn-secondary secondary_button_color" id="add-address">Order Another Pizza</span>
+            <span class="btn btn-secondary secondary_button_color" id="clear_this_pizza">Clear Form</span>
             <button type="submit" class="btn btn-primary">Finish Order</button>
           </form>
-        </div>
-
-        <div class="col-md-6">
-          <div class="showme">
-            <h2>Ordered Pizzas</h2>
-            <ul id="pizzas">
-
-            </ul>
-          </div>
         </div>
       </div>
     </div>
